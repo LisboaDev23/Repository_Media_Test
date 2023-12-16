@@ -50,7 +50,7 @@ function atualizaMediaFinal (){
     const resultadoApOrRp = document.getElementById('media-final-resultado');
     console.log(mediaFinal);
 
-    valorMedia.innerHTML=mediaFinal;
+    valorMedia.innerHTML=mediaFinal.toFixed(2);
     resultadoApOrRp.innerHTML= mediaFinal>=7 ? spanAprovado : spanReprovado ;
 }
 
